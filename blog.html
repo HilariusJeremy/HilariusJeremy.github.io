@@ -7,65 +7,91 @@
 
     <style>
 
-body {
+    body {
             background-color: black;
             color: white; 
             font: 1em/1.5 monospace;
         }
 
-    .container{
+    .top{
         display: flex;
         flex-direction: column;
-        border-bottom: solid 1px white;
-        border: solid 1px red;
         justify-content: center;
+        align-items: center;
     }
 
-    .center_div {
+    .header{
         display: flex;
-        justify-content: space-evenly;
-        border: solid 1px green;
-            }
+        justify-content: space-between;
+        width: 100%;
+    }
 
-  
+    .header a {
+        color: white;
+    }
     
-    .center_div a{
-        color:white
-            }
-    
-    .center_div p{
+    .menu_top{
+        display: flex;
+        width: 60%;
+        justify-content: space-evenly;
+    }
+
+    .menu_top p{
         font-size: 150%;
     }
 
+    .social{
+        display: flex;
+        width: 10%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-right: 7.5%;
+    }
+
     .separator{
-        height: 100%;
-        width: 100%;
-        border: solid 1px white;
+        width: 90%;
+        border: solid 1px  white;
     }
         
-         a{
+    a{
         color:white
             }
+
+    .blog{
+        width: 90%;
+        font-size: 150%;
+        }
     </style>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <div class="container">
-        <div class="center_div">
-            <p>[<a href="index.html">home</a>]</p>
-            <p>[<a href="blog.html">blog</a>]</p>
-            <p>[<a href="project.html">project</a>]</p>
-            <p>[<a href="experience.html">experience</a>]</p>
-            <p>[<a href="about.html">about</a>]</p>
+    <div class="top">
+        <div class="header">
+            <div class="menu_top">
+                <p>[<a href="index.html">home</a>]</p>
+                <p>[<a href="blog.html">blog</a>]</p>
+                <p>[<a href="project.html">project</a>]</p>
+                <p>[<a href="experience.html">experience</a>]</p>
+                <p>[<a href="about.html">about</a>]</p>
+            </div>
+
+            <div class="social">
+                <p><a href="https://www.linkedin.com/in/hilariusjeremy/"><i style="font-size:24px" class="fa">&#xf08c;</i></a></p>
+                <p><a href="https://github.com/HilariusJeremy"><i style="font-size:24px" class="fa">&#xf09b;</i></a></p>
+            </div>
         </div>
+
         <div class="separator"></div>
+        <div class="blog">
+            <h1>Blog</h1>
+    
+            <ul>
+                <li>
+                <a href="aug-28.html">August 28, 2024</a>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <h1>Blog</h1>
-
-    <ul>
-        <li>
-        <a href="aug-28.html">August 28, 2024</a>
-        </li>
-    </ul>
+    
+    
 </body>
 </html>
