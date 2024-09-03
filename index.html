@@ -10,28 +10,39 @@
             background-color: black;
             color: white; 
             font: 1em/1.5 monospace;
+            
+            height: 90vh;
+        }
+
+        a {
+            color: white;
+        }
+
+        
+        .link{
+            font-size: 150%;
+        }
+
+        p{
+            text-align: center;
+            font-size: 150%;
         }
 
         .main{
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
-        transform-origin: center;
-        height: auto;
-        margin-top: 2%;
-        
-
+            display: flex;
+            justify-content: center;
+            transform-origin: center;
+            margin-top: 2%;
+            height: 95%;     
        }
-
 
         .container {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;        
             height: auto;
-            margin-right: 5%;
-
+            margin-right: 2%;
         }
 
         .container img {
@@ -41,13 +52,6 @@
             border: 1px solid white;
         }
 
-        .container h1{
-            font-size: 250%;
-        }
-
-       .container p{
-            font-size: 150%;
-       }
 
         .buttons {
             display: flex;
@@ -57,50 +61,68 @@
             flex-direction: column;
         }
 
-        .buttons p{
-            font-size: 150%;
-        }
-
-        a {
-            color: white;
-        }
-
         .separator{
             width: 1px;
             height: auto;
             background-color: white;
-            margin-right: 5%;
+            margin-right: 3%;
         }
        
-        p{
-            text-align: center;
-        }
         
         .ref-link{
             display: flex;
-            flex-direction: row;
             width: 100%;
             justify-content: space-evenly;
-            
+        }
+
+
+        .icon{
+            text-decoration: none;
+        }
+        
+        .text{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;   
+        }
+
+        .text h1{
+            margin-bottom: 0%;
         }
 
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <div class="main">
+        
         <div class="container">
-            <img src="assets/home.gif" alt="Description of the image">
-            <h1>Hilarius Jeremy</h1> 
-            <div clas="text">
-            <p>natural language native. <br> 
+            <img src="assets/home.gif" alt="Description of the image">    
+            <div class="text">     
+                <h1>Hilarius Jeremy</h1> 
+
+                <p>natural language native. <br> 
                 root admin of state-of-the-art natural supercomputer.<br>
                 i command the machine and it echoes my will.</p>
-            </div>
-            <div class="ref-link">
-                <p><i style="font-size:24px" class="fa">&#xf08c;</i>   <a href="https://www.linkedin.com/in/hilariusjeremy/">LinkedIn</a></p>
-                <p><i style="font-size:24px" class="fa">&#xf09b;</i>   <a href="https://github.com/HilariusJeremy">  GitHub</a></p>
+                
+                <div class="ref-link">
+                    <div class="link">
+                        <a href="https://www.linkedin.com/in/hilariusjeremy/" class="icon">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hilariusjeremy/">LinkedIn</a>
+                    </div>
+                    
+                    <div class="link">
+                        <a href="https://github.com/HilariusJeremy" class="icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://github.com/HilariusJeremy">GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
     
