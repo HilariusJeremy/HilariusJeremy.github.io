@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog</title>
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -35,18 +36,11 @@
         width: 80%;
         justify-content: space-evenly;
         
+        
     }
 
     .menu_top p{
         font-size: 150%;
-    }
-
-    .social{
-        display: flex;
-        width: 10%;
-        align-items: center;
-        justify-content: space-evenly;
-        margin-right: 7.5%;
     }
 
     .separator{
@@ -76,6 +70,20 @@
         justify-content: center;
         align-items: center;
     }
+
+    .ref-link{
+        display: flex;
+        width: 10%;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-right: 7.5%;
+        }
+
+    .icon{
+            text-decoration: none;
+            font-size: 150%;
+        }
+
     
         
     </style>
@@ -91,13 +99,42 @@
                 <p>[<a href="about.html">about</a>]</p>
             </div>
 
-            <div class="social">
-                <p><a href="https://www.linkedin.com/in/hilariusjeremy/"><i style="font-size:24px" class="fa">&#xf08c;</i></a></p>
-                <p><a href="https://github.com/HilariusJeremy"><i style="font-size:24px" class="fa">&#xf09b;</i></a></p>
+            <div class="ref-link">
+                    <a href="https://www.linkedin.com/in/hilariusjeremy/" class="icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+        
+                    <a href="https://github.com/HilariusJeremy" class="icon">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
             </div>
         </div>
+        
 
         <div class="separator"></div>
+
+        <div class="blog">
+
+            <div class="compartment">
+                <div class="date">
+                    <h1>Date</h1>
+                    <ul class="no-bullets">
+                        <li>
+                            August 28, 2024
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="title">
+                    <h1>Title</h1>
+                    <ul class="no-bullets">
+                        <li>
+                            <a href="aug-28.html">The Starting Point</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     
     
 </body>

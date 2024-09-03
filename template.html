@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog</title>
+    <title>Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -41,42 +42,62 @@
         font-size: 150%;
     }
 
-    .social{
+    .ref-link{
         display: flex;
         width: 10%;
         align-items: center;
         justify-content: space-evenly;
         margin-right: 7.5%;
-    }
+        }
+
+    .icon{
+            text-decoration: none;
+            font-size: 150%;
+        }
 
     .separator{
         width: 90%;
         border: solid 1px  white;
     }
-        
-    a{
-        color:white
-            }
 
     .blog{
-        width: 90%;
-        font-size: 150%;
-        }
-
-    
-    ul.no-bullets {
-        list-style-type: none; /* Remove bullets */
-        padding: 0; /* Remove padding */
-        margin: 0; /* Remove margins */
-    }
-
-    .compartment{
-        display:flex;
-        gap: 10%;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        font-size: 125%;
         justify-content: center;
         align-items: center;
+        }
+
+    .blog h1{
+        text-align: center;
     }
-    
+
+    .blog p{
+        text-align: justify;
+    }
+
+    .title-header{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .title-header img{
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border: 1px solid white;
+    }
+
+    .content{
+        font-size: 100%;
+        text-indent: 50px;
+    }
+
+
         
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -91,13 +112,48 @@
                 <p>[<a href="about.html">about</a>]</p>
             </div>
 
-            <div class="social">
-                <p><a href="https://www.linkedin.com/in/hilariusjeremy/"><i style="font-size:24px" class="fa">&#xf08c;</i></a></p>
-                <p><a href="https://github.com/HilariusJeremy"><i style="font-size:24px" class="fa">&#xf09b;</i></a></p>
+            <div class="ref-link">
+                <a href="https://www.linkedin.com/in/hilariusjeremy/" class="icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+    
+                <a href="https://github.com/HilariusJeremy" class="icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </div>
 
         <div class="separator"></div>
+
+        <div class="blog">
+            <div class="title-header">
+                <h1>General Section</h1>
+                <img class="img" src="assets/home-alt.gif" alt="August 28, 2024">
+                <p class="date-title">Date</p>
+            </div>
+            
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut nibh elementum dui ornare dignissim. 
+                    Donec volutpat sed diam non dignissim. Quisque eu consectetur tortor. Sed efficitur turpis vitae ante aliquet, 
+                    nec vulputate odio lacinia. Fusce neque odio, volutpat eu fringilla ac, malesuada ut nisi. Integer vel ipsum 
+                    libero. Sed hendrerit nulla vel elit ullamcorper viverra ut ac felis. Duis vitae nulla a turpis rhoncus facilisis. 
+                    Aliquam est felis, luctus in purus at, egestas egestas lectus. Nunc viverra condimentum ligula, eu commodo libero 
+                    tempor ac. Ut tristique, nisl sed convallis rutrum, erat lectus porttitor dolor, id tristique urna ipsum et sem. 
+                    Vestibulum iaculis justo ipsum, ac egestas nibh faucibus at. Ut et posuere eros. Pellentesque non velit feugiat, 
+                    dignissim sapien ac, efficitur erat. Donec et elementum tellus, at congue felis.
+                </p>
+
+                <p>
+                    Aliquam dapibus ac dui non sollicitudin. Aliquam cursus leo et gravida accumsan. In sapien quam, imperdiet id maximus 
+                    non, placerat a quam. Maecenas arcu nunc, ullamcorper at risus non, eleifend maximus urna. Vivamus dolor eros, posuere 
+                    non nulla at, hendrerit laoreet tellus. Fusce tincidunt venenatis neque in placerat. Vivamus non tortor pretium, 
+                    convallis elit sed, aliquet mi. Sed a eros ut ipsum lacinia egestas eu nec justo. Etiam eros purus, semper at auctor 
+                    scelerisque, gravida ac ipsum.
+                </p>
+
+                </div>
+        </div>
     
     
 </body>
