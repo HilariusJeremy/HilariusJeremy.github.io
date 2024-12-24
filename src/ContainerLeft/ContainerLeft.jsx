@@ -1,11 +1,12 @@
 import './ContainerLeft.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import home from '../assets/home.gif'
 
 const ContainerLeft = () => {
     return (
       <div className='container'>
-        <img src='src\assets\home.gif' alt="home-image"/> 
+        <img src={home} alt="home-image"/> 
         <h1>Hilarius Jeremy</h1> 
 
         <div className='text'>
