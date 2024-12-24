@@ -6,7 +6,7 @@ const AboutPage = () => {
         <div className='about'>
             <NavBar />
             
-            <img src="assets/headshot.png" alt="Description of the image"/>
+            <img src="../assets/headshot.png" alt="Description of the image"/>
             <h1>Hilarius Jeremy Immanuel Litano</h1>
             <p>Computer Science NTU Singapore</p>
         </div>
