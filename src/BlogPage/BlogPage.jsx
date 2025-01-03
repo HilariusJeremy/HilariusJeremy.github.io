@@ -1,7 +1,11 @@
 import NavBar from "../NavBar/NavBar"
 import "./BlogPage.css"
+import { useEffect } from "react"
 
 const BlogPage = () => {
+    useEffect(() => {
+        document.title = "Blog"
+    })
     return (
         <div className="blog">
             <NavBar />

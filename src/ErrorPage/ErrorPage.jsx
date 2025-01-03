@@ -1,8 +1,13 @@
 import NavBar from "../NavBar/NavBar"
 import './ErrorPage.css'
 import alphaOmegaFestinaLente from '../assets/alpha-omega-festina-lente.png'
+import { useEffect } from "react"
 
 const ErrorPage = () => {
+    useEffect(() => {
+        document.title = "Error"
+    })
+
     return (
         <div className="error">
             <NavBar />

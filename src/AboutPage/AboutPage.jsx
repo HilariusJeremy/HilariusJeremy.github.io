@@ -1,8 +1,13 @@
 import './AboutPage.css'
 import NavBar from '../NavBar/NavBar'
 import headshot from '../assets/headshot.png'
+import { useEffect } from 'react'
 
 const AboutPage = () => {
+    useEffect(() => {
+        document.title = 'About'
+    })
+
     return (
         <div className='about'>
             <NavBar />
