@@ -9,12 +9,16 @@
     margin-bottom: 2%;
 }
 
-.navbar a{
+.navbar a {
     color: white;
 }
 
-.navbar a:hover{
-    color: #50C878;
+.navbar a:hover {
+    color: lightgreen; /* Hover color */
+}
+
+.navbar a.active {
+    color: #0f8536; /* Active color */
 }
 
 .links{

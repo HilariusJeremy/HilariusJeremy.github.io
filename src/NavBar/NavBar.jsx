@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './NavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -7,11 +7,11 @@ const NavBar = () => {
     return(
     <div className='navbar'>
 
-        <p>[<Link to="/">home</Link>]</p>
-        <p>[<Link to="/blog">blog</Link>]</p>
-        <p>[<Link to="/project">project</Link>]</p>
-        <p>[<Link to="/experience">experience</Link>]</p>
-        <p>[<Link to="/about">about</Link>]</p>
+<p>[<NavLink to="/" className={({ isActive }) => isActive ? 'active' : '' }>home</NavLink>]</p>
+        <p>[<NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : '' }>blog</NavLink>]</p>
+        <p>[<NavLink to="/project" className={({ isActive }) => isActive ? 'active' : '' }>project</NavLink>]</p>
+        <p>[<NavLink to="/experience" className={({ isActive }) => isActive ? 'active' : '' }>experience</NavLink>]</p>
+        <p>[<NavLink to="/about" className={({ isActive }) => isActive ? 'active' : '' }>about</NavLink>]</p>
 
         <div className='links'>
             <a href="https://www.linkedin.com/in/hilariusjeremy/" target='blank'>
