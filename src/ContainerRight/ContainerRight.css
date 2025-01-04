@@ -15,10 +15,13 @@
 }
 
 .buttons a:hover{
-    color: #50C878;
+    color: greenyellow;
+}
+
+.buttons a.active{
+    color: lightgreen;
 }
 
 .buttons p{
     margin-left: 10%
 }
-

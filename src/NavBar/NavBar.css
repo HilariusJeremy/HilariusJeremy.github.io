@@ -14,11 +14,11 @@
 }
 
 .navbar a:hover {
-    color: lightgreen; /* Hover color */
+    color: greenyellow; /* Hover color */
 }
 
 .navbar a.active {
-    color: #50C878; /* Active color */
+    color: lightgreen; /* Active color */
 }
 
 .links{
