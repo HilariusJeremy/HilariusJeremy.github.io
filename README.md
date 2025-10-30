@@ -2,6 +2,8 @@
 
 Long overdue, but finally here we are.
 
+- To run the prototype locally, 
+
 Goal:
 - Populate content
 - Include page view counter

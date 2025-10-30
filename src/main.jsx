@@ -19,6 +19,7 @@ const router = createBrowserRouter([{
     path: '/blog',
     element: <BlogPage />
 }
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
